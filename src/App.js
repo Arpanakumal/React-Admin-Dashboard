@@ -12,6 +12,8 @@ import {Ecommerce, Orders, Calendar, Employees, Stacked,
   ColorPicker, ColorMapping, Editor
 } from './pages'
 
+import { useStateContext } from './context/ContextProvider'
+
 
 
 
@@ -19,7 +21,7 @@ import {Ecommerce, Orders, Calendar, Employees, Stacked,
 
 const App = () => {
 
-  const activeMenu = true;
+const {activeMenu, setActiveMenu} = useStateContext();
 
 
 
